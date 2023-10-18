@@ -10,7 +10,7 @@ from wagtailnhsukfrontend.blocks import (ActionLinkBlock, CardBasicBlock,
                                          WarningCalloutBlock)
 from wagtailnhsukfrontend.mixins import HeroMixin, ReviewDateMixin
 
-from wagtail.admin.panels import FieldPanel as StreamFieldPanel
+from wagtail.admin.panels import FieldPanel
 from wagtail.fields import StreamField
 from wagtail.models import Page
 
@@ -34,7 +34,7 @@ class HomePage(HeroMixin, ReviewDateMixin, Page):
     ], use_json_field=True)
 
     content_panels = Page.content_panels + HeroMixin.content_panels + [
-        StreamFieldPanel('body'),
+        FieldPanel('body'),
     ]
 
     settings_panels = Page.settings_panels + ReviewDateMixin.settings_panels
@@ -59,5 +59,5 @@ class HubsPage(Page):
         ('card_group', CardGroupBlock()),
     ], use_json_field=True)
     content_panels = Page.content_panels + [
-        StreamFieldPanel('body'),
+        FieldPanel('body'),
     ]

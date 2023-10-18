@@ -3,7 +3,6 @@ from django.db import models
 from wagtail.images.models import Image
 
 from wagtail.admin.panels import FieldPanel, MultiFieldPanel
-from wagtail.admin.panels import FieldPanel as ImageChooserPanel
 
 
 class ReviewDateMixin(models.Model):
@@ -45,7 +44,7 @@ class HeroMixin(models.Model):
         related_name='+',
     )
 
-    content_panels = [MultiFieldPanel([FieldPanel('hero_heading'), FieldPanel('hero_text'), ImageChooserPanel('hero_image')], heading="Hero content")]
+    content_panels = [MultiFieldPanel([FieldPanel('hero_heading'), FieldPanel('hero_text'), FieldPanel('hero_image')], heading="Hero content")]
 
     def clean(self):
         if not (self.hero_text or self.hero_image):

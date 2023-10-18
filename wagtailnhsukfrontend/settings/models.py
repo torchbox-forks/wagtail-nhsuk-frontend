@@ -10,7 +10,6 @@ from wagtail.admin.panels import (
     PageChooserPanel
 )
 from wagtail.models import Orderable
-from wagtail.admin.panels import FieldPanel as ImageChooserPanel
 
 
 @register_setting
@@ -59,7 +58,7 @@ class HeaderSettings(ClusterableModel, BaseSiteSetting):
         MultiFieldPanel([
             PageChooserPanel('logo_link'),
             FieldPanel('logo_aria'),
-            ImageChooserPanel('logo_custom'),
+            FieldPanel('logo_custom'),
             FieldPanel('show_search'),
         ], heading="General"),
         MultiFieldPanel([
