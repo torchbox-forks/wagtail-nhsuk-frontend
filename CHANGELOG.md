@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Add tox testing for Wagtail 6.2
+
 ## 1.6.0
 
 - Upgrade for Wagtail 5.0+ compatibility
