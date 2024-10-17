@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Add tox tetsing for Wagtail 6.2
 - Drop tests for Django < 4.2 as it has reached EOL (@katdom13)
 - Add tests for Wagtail 6.1 (@katdom13)
 
