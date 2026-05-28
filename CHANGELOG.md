@@ -4,10 +4,8 @@
 
 - Add support for Wagtail 7.2, 7.3 and 7.4 (LTS).
 - Add support for Django 6.0.
-- Drop support for Django 4.2 and Django 5.1.
 - Add support for Python 3.14.
-- Drop support for Wagtail 6.3 (LTS, EOL 2026-05-01) and Wagtail 6.4 (EOL).
-- Drop support for Python 3.9 (EOL 2025-10-31).
+- Drop support for Django 4.2 and Django 5.1, Wagtail 6.3 (LTS, EOL 2026-05-01) and Wagtail 6.4 (EOL) and Python 3.9 (EOL 2025-10-31).
 - Add PyPI classifiers, `python_requires=">=3.10"`, and `license="MIT"` metadata to `setup.py`.
 - Fix `wagtail.core` imports in component documentation (use `wagtail.models` / `wagtail.fields`).
 
