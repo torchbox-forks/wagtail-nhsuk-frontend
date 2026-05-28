@@ -5,7 +5,7 @@ A wagtail implementation of the [NHS frontend v10.4.2](https://github.com/nhsuk/
 ## Compatibility
 
 - Python 3.10 – 3.14
-- Django 4.2, 5.1, 5.2, 6.0
+- Django 5.2, 6.0
 - Wagtail 7.0 (LTS) – 7.4 (LTS)
 
 ## Installation
