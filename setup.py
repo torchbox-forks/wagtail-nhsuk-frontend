@@ -8,9 +8,9 @@ INSTALL_REQUIRES = [
 ]
 
 TESTING_REQUIRES = [
-    "beautifulsoup4==4.12.3",
+    "beautifulsoup4==4.14.3",
     "pytest==9.0.3",
-    "pytest-django==4.8.0",
+    "pytest-django==4.12.0",
 ]
 
 LINTING_REQUIRES = [
